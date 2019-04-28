@@ -6,7 +6,7 @@
     <body>
         <?php ?>
         <?php
-        $apparel=array[Gloves, Jackets, Shirts, Pants, Outerwear, Boots, Helmets];
+        $apparel=[Gloves, Jackets, Shirts, Pants, Outerwear, Boots, Helmets];
         print_r($apparel);
         ?> <hr>
         <?php
