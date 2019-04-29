@@ -17,6 +17,10 @@ header {
                 <?= "Welcome, " . htmlspecialchars($_GET['name']);?>
             </h1>
         </header>
-
+<ul>
+    <?php foreach ($name as $name) : ?>
+       <li><?= $name; ?></li>
+<?php endforeach; ?>
+</ul>
     </body>
 </html>
