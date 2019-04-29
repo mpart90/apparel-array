@@ -18,8 +18,10 @@ header {
             </h1>
         </header>
 <ul>
-    <?php foreach ($name as $name) : ?>
-       <li><?= $name; ?></li>
+    <?php foreach ($person as $feature => $data) : ?>
+       <li>
+           <Strong><?= ucwords($feature); ?>: </Strong> <?= $data; ?>
+        </li>
 <?php endforeach; ?>
 </ul>
     </body>
