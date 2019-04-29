@@ -18,11 +18,18 @@ header {
             </h1>
         </header>
 <ul>
-    <?php foreach ($person as $feature => $data) : ?>
-       <li>
-           <Strong><?= ucwords($feature); ?>: </Strong> <?= $data; ?>
-        </li>
-<?php endforeach; ?>
+    <li>
+        <strong>Age: </strong> <?= $person['age']; ?>
+    </li>
+    <li>
+        <strong>Hair color: </strong> <?= $person['hair']; ?>
+    </li>
+    <li>
+        <strong>Job title: </strong> <?= $person['career']; ?>
+    </li>
+    <li>
+        <strong>Are they here: </strong> <?= $person['present'] ? 'present' : 'not present'; ?>
+    </li>
 </ul>
     </body>
 </html>
